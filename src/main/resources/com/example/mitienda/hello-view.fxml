@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="420.0"
+      spacing="15.0" styleClass="main-content"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.mitienda.HelloController">
+
+    <padding>
+        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+    </padding>
+
+    <VBox styleClass="card-panel" spacing="15" alignment="CENTER" VBox.vgrow="ALWAYS">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+
+        <Label text="MI TIENDA" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #1a243d;" />
+        <Label text="Iniciar Sesión" style="-fx-font-size: 14px; -fx-text-fill: #64748b;" />
+
+        <VBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Usuario" styleClass="form-label" />
+            <TextField fx:id="txtUsuario" promptText="Ingrese su usuario" maxWidth="Infinity"/>
+        </VBox>
+
+        <VBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Contraseña" styleClass="form-label" />
+            <PasswordField fx:id="txtContrasenia" promptText="••••••••" maxWidth="Infinity"/>
+        </VBox>
+
+        <VBox spacing="5" alignment="CENTER_LEFT">
+            <Label text="Rol" styleClass="form-label" />
+            <ComboBox fx:id="CboxRol" promptText="- SELECCIONAR -" maxWidth="Infinity" />
+        </VBox>
+
+        <Label fx:id="lblMensaje" style="-fx-text-fill: #d32f2f; -fx-font-weight: bold; -fx-font-size: 12px;" wrapText="true" />
+
+        <Button fx:id="btnIngresar"
+                text="INGRESAR"
+                onAction="#ingresar"
+                styleClass="btn-crud, btn-nuevo"
+                maxWidth="Infinity"
+                style="-fx-padding: 10 0;"/>
+    </VBox>
+</VBox>
