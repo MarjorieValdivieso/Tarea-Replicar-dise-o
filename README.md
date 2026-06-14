@@ -8,7 +8,8 @@ Sistema de escritorio moderno para controlar productos, categorías y ventas de 
 
 <img width="1126" height="973" alt="dashboard" src="https://github.com/user-attachments/assets/6e96396e-1e80-4c62-891f-3a15edb3d59d" />
 
-![Diseño del Dashboard](dashboard.png)
+<img width="526" height="645" alt="login" src="https://github.com/user-attachments/assets/5576f47f-d37a-4f44-b845-c4e3aac46746" />
+
 
 ---
 
